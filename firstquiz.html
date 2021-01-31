@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>General Mindset</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      #container {
+        background-image: url("assets/all.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        opacity: 1;
+        width: 100vw;
+        height: auto;
+        margin: 0;
+      }
+      input[type="radio"]:checked + label:before {
+        height: 16px;
+        width: 16px;
+        border: 10px solid rgb(0, 0, 0);
+        background-color: #ffffff;
+      }
+
+      .fullform > h3 {
+        color: #000 !important;
+        font-family: "Helvetica";
+      }
+      .btn-primary {
+        background-color: #000;
+        color: azure;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <header id="header">
+        <h1>General Mindset</h1>
+        <p>
+          Research links the growth mindset with many benefits, including
+          greater comfort with taking personal risks and striving for more
+          stretching goals; higher motivation; enhanced brain development across
+          wider ranges of tasks; lower stress, anxiety and depression; better
+          work relationships; and higher performance levels.
+        </p>
+        <br />
+        <p>Please select the closest level of agreement to each statement.</p>
+      </header>
+      <section>
+        <form
+          name="quizForm"
+          class="fullform"
+          onsubmit="return submitFirstAnswers(event)"
+        >
+          <h3>Q1. I invest time in myself to be alone with my thoughts?.</h3>
+          <div class="wrap">
+            <input type="radio" name="q1" value="a" id="q1a" />
+            <label for="q1a"
+              ><span class="makesmall">Strongly Disagree</span></label
+            >
+
+            <input type="radio" name="q1" value="b" id="q1b" />
+            <label for="q1b"><span class="makesmall">Disagree</span></label>
+
+            <input type="radio" name="q1" value="c" id="q1c" />
+            <label for="q1c"
+              ><span class="makesmall">Neither Agree Nor Disagree</span></label
+            >
+
+            <input type="radio" name="q1" value="d" id="q1d" />
+            <label for="q1d"> <span class="makesmall">Agree</span> </label>
+            <input type="radio" name="q1" value="e" id="q1e" />
+            <label for="q1e">
+              <span class="makesmall">Strongly Agree</span>
+            </label>
+          </div>
+          <br />
+          <h3>
+            Q2. I feel secure in my ability to be positive even around negative
+            people?
+          </h3>
+          <div class="wrap">
+            <input type="radio" name="q2" value="a" id="q2a" />
+            <label for="q2a"
+              ><span class="makesmall">Strongly Disagree</span></label
+            >
+            <input type="radio" name="q2" value="b" id="q2b" />
+            <label for="q2b"><span class="makesmall">Disagree</span></label>
+            <input type="radio" name="q2" value="c" id="q2c" />
+            <label for="q2c"
+              ><span class="makesmall">Neither Agree Nor Disagree</span></label
+            >
+            <input type="radio" name="q2" value="d" id="q2d" />
+            <label for="q2d"> <span class="makesmall">Agree</span></label>
+            <input type="radio" name="q2" value="e" id="q2e" />
+            <label for="q2e">
+              <span class="makesmall">Strongly Agree</span></label
+            >
+          </div>
+
+          <h3>
+            Q3. I am confident when I am faced with difficult conversations.
+          </h3>
+          <div class="wrap">
+            <input type="radio" name="q3" value="a" id="q3a" />
+            <label for="q3a"
+              ><span class="makesmall">Strongly Disagree</span></label
+            >
+            <input type="radio" name="q3" value="b" id="q3b" />
+            <label for="q3b"><span class="makesmall">Disagree</span></label>
+            <input type="radio" name="q3" value="c" id="q3c" />
+            <label for="q3c"
+              ><span class="makesmall">Neither Agree Nor Disagree</span></label
+            >
+            <input type="radio" name="q3" value="d" id="q3d" />
+            <label for="q3d"><span class="makesmall">Agree</span></label>
+            <input type="radio" name="q3" value="e" id="q3e" />
+            <label for="q3e">
+              <span class="makesmall">Strongly Agree</span></label
+            >
+          </div>
+
+          <h3>
+            Q4. I am confident to try new things even if I have no previous
+            experience.
+          </h3>
+          <div class="wrap">
+            <input type="radio" name="q4" value="a" id="q4a" />
+            <label for="q4a"
+              ><span class="makesmall">Strongly Disagree</span></label
+            >
+            <input type="radio" name="q4" value="b" id="q4b" />
+            <label for="q4b"><span class="makesmall">Disagree</span></label>
+            <input type="radio" name="q4" value="c" id="q4c" />
+            <label for="q4c"
+              ><span class="makesmall">Neither Agree Nor Disagree</span></label
+            >
+            <input type="radio" name="q4" value="d" id="q4d" />
+            <label for="q4d"><span class="makesmall">Agree</span></label>
+            <input type="radio" name="q4" value="e" id="q4e" />
+            <label for="q4e">
+              <span class="makesmall">Strongly Agree</span></label
+            >
+          </div>
+
+          <h3>Q5. I have people in my life that support me.</h3>
+          <div class="wrap">
+            <input type="radio" name="q5" value="a" id="q5a" />
+            <label for="q5a"
+              ><span class="makesmall">Strongly Disagree</span></label
+            >
+            <input type="radio" name="q5" value="b" id="q5b" />
+            <label for="q5b"><span class="makesmall">Disagree</span></label>
+            <input type="radio" name="q5" value="c" id="q5c" />
+            <label for="q5c"
+              ><span class="makesmall">Neither Agree Nor Disagree</span></label
+            >
+            <input type="radio" name="q5" value="d" id="q5d" />
+            <label for="q5d"><span class="makesmall">Agree</span></label>
+            <input type="radio" name="q5" value="e" id="q5e" />
+            <label for="q5e">
+              <span class="makesmall">Strongly Agree</span></label
+            >
+          </div>
+          <h3>
+            Q6. I can remove my ego easily and learn new things about myself.
+          </h3>
+          <div class="wrap">
+            <input type="radio" name="q6" value="a" id="q6a" />
+            <label for="q6a"
+              ><span class="makesmall">Strongly Disagree</span></label
+            >
+            <input type="radio" name="q6" value="b" id="q6b" />
+            <label for="q6b"><span class="makesmall">Disagree</span></label>
+            <input type="radio" name="q6" value="c" id="q6c" />
+            <label for="q6c"
+              ><span class="makesmall">Neither Agree Nor Disagree</span></label
+            >
+            <input type="radio" name="q6" value="d" id="q6d" />
+            <label for="q6d"><span class="makesmall">Agree</span></label>
+            <input type="radio" name="q6" value="e" id="q6e" />
+            <label for="q6e">
+              <span class="makesmall">Strongly Agree</span></label
+            >
+          </div>
+          <br /><br />
+          <div class="wrap">
+            <button type="submit" class="btn-primary" id="btn-next">
+              Next
+            </button>
+          </div>
+        </form>
+      </section>
+      <!-- <footer>
+        <p>Copyright &copy; 2014, All Rights Reserved</p>
+      </footer>-->
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
