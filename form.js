@@ -1,5 +1,5 @@
-document.querySelector(".usertype").style.display = "none";
-document.getElementById("resultbtn").style.display = "none";
+//document.querySelector(".usertype").style.display = "none";
+//document.getElementById("resultbtn").style.display = "none";
 
 //formspree
 
@@ -53,52 +53,3 @@ function ajax(method, url, data, success, error) {
   };
   xhr.send(data);
 }
-////////type of user
-
-const curlpoints = sessionStorage.getItem("curlpoints");
-const growthpoints = sessionStorage.getItem("growthpoints");
-const damagepoints = sessionStorage.getItem("damagepoints");
-const moisturepoints = sessionStorage.getItem("moisturepoints");
-const alphabet = sessionStorage.getItem("alphabet");
-const numnumber = sessionStorage.getItem("number");
-
-let typo;
-
-if (
-  curlpoints > growthpoints &&
-  curlpoints > damagepoints &&
-  curlpoints > moisturepoints
-) {
-  typo = "Curl Enhancing Box " + alphabet + numnumber;
-}
-
-if (
-  growthpoints > curlpoints &&
-  growthpoints > damagepoints &&
-  growthpoints > moisturepoints
-) {
-  typo = "Growth/Length Retention Box " + alphabet + numnumber;
-}
-
-if (
-  damagepoints > curlpoints &&
-  damagepoints > growthpoints &&
-  damagepoints > moisturepoints
-) {
-  typo = "Damage control box " + alphabet + numnumber;
-}
-if (
-  moisturepoints > curlpoints &&
-  moisturepoints > growthpoints &&
-  moisturepoints > damagepoints
-) {
-  typo = "Moisture Box " + alphabet + numnumber;
-}
-
-//document.querySelector(".headmsg").innerHTML = typo;
-//const msgme = document.querySelector(".msghere");
-//msgme.className = "center-item";
-//document.querySelector(".msghere").innerHTML = ma
-document.querySelector(".usertype").value = typo;
-//document.querySelector(".usertype").style.display = "none";
-console.log(typo);

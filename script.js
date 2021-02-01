@@ -222,5 +222,5 @@ function submitFifthAnswers(e) {
   }
   sessionStorage.setItem("fifthpoints", fifthpoints);
 
-  location.href = "end.html";
+  location.href = "Form.html";
 }
