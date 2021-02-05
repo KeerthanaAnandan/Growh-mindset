@@ -19,7 +19,7 @@ body {
 }
 #container > #header {
   width: 90%;
-  margin-top: 240px !important;
+  margin-top: 180px !important;
 }
 
 #container h3 {
@@ -512,15 +512,14 @@ li {
   border-radius: 8px;
 }
 #showcas .showcase-content h1 {
-  font-size: 30px;
-  line-height: 2.8rem;
-  text-align: center;
+  font-size: 25px;
+  line-height: 35px;
 }
 #showcas .showcase-content h2,
 #showcas .showcase-content h3 {
   font-size: 30px;
   padding-bottom: 20px;
-  line-height: 1.7em;
+  line-height: 2.5rem;
   font-weight: lighter;
 }
 .tipsbucket {
@@ -578,7 +577,7 @@ li {
 /* Share Buttons */
 
 .footer {
-  background-color: grey;
+  background-color: rgb(95, 95, 95);
   color: #fff;
   display: flex;
   flex-direction: row;
@@ -595,10 +594,11 @@ li {
   align-items: center;
   justify-content: center;
   padding: 16px;
+  width: 100vw;
 }
 
 .share-btn-area a i {
-  font-size: 32px;
+  font-size: 25px;
   padding: 7px;
 }
 
@@ -610,7 +610,8 @@ li {
 .share-btn-area a:hover {
   transform: scale(1.2);
 }
-.share-btn-area .fa-facebook {
+.share-btn-area .fa-facebook,
+.share-btn-area .fa-youtube {
   color: #ffffff;
 }
 .share-btn-area .fa-envelope {
@@ -803,11 +804,15 @@ li {
   }
 
   #showcas .showcase-content h1 {
-    font-size: 19px;
-    font-weight: bold;
+    font-size: 15px;
+    line-height: 25px;
   }
-  #showcas .showcase-content h2 {
-    font-size: 17px;
+  #showcas .showcase-content h2,
+  #showcas .showcase-content h3 {
+    font-size: 15px;
+    padding-bottom: 20px;
+    line-height: 1.5rem;
+    font-weight: lighter;
   }
   .bucket {
     display: flex;
@@ -837,7 +842,7 @@ li {
   }
 
   #showcas .showcase-content {
-    color: #fff;
+    color: #000;
 
     text-align: center;
 
@@ -854,7 +859,7 @@ li {
     font-size: small;
   }
   #headone {
-    font-size: 50px;
+    font-size: 10px;
     font-weight: bolder;
   }
 
@@ -885,5 +890,46 @@ li {
   }
   #showcas #msghere {
     font-size: 17px;
+  }
+  .footer {
+    background-color: rgb(95, 95, 95);
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    width: 100%;
+  }
+  .share-btn-area {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    width: 100vw;
+  }
+
+  .share-btn-area a i {
+    font-size: 15px;
+    padding: 7px;
+  }
+
+  .share-btn-area a {
+    margin: 8px 0;
+    transition: 500ms;
+  }
+
+  .share-btn-area a:hover {
+    transform: scale(1.2);
+  }
+  .share-btn-container > h5 {
+    font-size: 6px;
+  }
+  .share-btn-container > h4 {
+    font-size: 8px;
+    line-height: 55px;
   }
 }
