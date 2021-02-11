@@ -1,16 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>General Mindset</title>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+    rel="stylesheet"
+  />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    />
     <style>
-      #container {
+      #container{
         background-image: url("assets/allbg1.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         background-attachment: fixed;
         opacity: 1;
+    
+      
         width: 100vw;
         height: auto;
         margin: 0;
@@ -30,34 +43,82 @@
         background-color: #000;
         color: azure;
       }
+    
       /* .centerit {
         display:block;
         text-align: center;
-        justify-items: center;
-        align-items: center;
+      
+        
         width: 90%;
-      }
-
+      } */
+/*
       li {
         display: list-item;
       } */
+      ul{
+        display: flex;
+      
+        flex-direction: column;
+        width: max-content;
+      margin-left: auto;
+      margin-right: auto;
+      }
+      ul > li{
+        display: flex;
+        flex-direction: row;
+        
+       align-items: center;
+
+      }
+      .fa-circle{
+        color: yellow;
+        background-color: black;
+        border-radius: 50%;
+    
+        font-size: 10px;
+        margin:10px;
+      }
+      @media (max-width: 540px) {
+        #container {
+         background-image: none !important;
+    
+    
+        }
+      
+     
+      }
+    
+
+
+      
+
     </style>
   </head>
   <body>
-    <div id="container">
+    <div  id="container">
       <nav id="navbar">
         <h1 class="logo">
           <img src="assets/logo.png" width="35%" margin="0" />
         </h1>
       </nav>
       <header id="header">
-        <h1>General Mindset</h1>
+        <h1>General Mindset  </h1>
         <p>
           Did you know that research links a growth mindset with many benefits
-          including: more comfort with taking personal risks , striving for
-          bigger goals, greater motivation , enhanced brain development across a
-          range of tasks , lower stress, anxiety or depression ,better work
-          relationships and higher performance levels over all.
+          including:
+          <ul>
+            <li>   <i class="fab fa-circle"></i>  more comfort with taking personal risks</li>
+            <li>   <i class="fab fa-circle"></i>striving for bigger goals</li>
+            <li> <i class="fab fa-circle"></i>greater motivation </li>
+            <li> <i class="fab fa-circle"></i>enhanced brain development across a
+              range of tasks</li>
+              <li> <i class="fab fa-circle"></i>lower stress</li>
+              <li> <i class="fab fa-circle"></i>anxiety or depression</li>
+              <li> <i class="fab fa-circle"></i>better work
+                relationships</li>
+                <li> <i class="fab fa-circle"></i>higher performance levels over all</li>
+          </ul>
+      
         </p>
         <p>
           Now, more than ever, developing a Growth Mindset is so important for
@@ -121,7 +182,6 @@
 
           <h3>
             Q3. I find confidence when I am faced with difficult conversations.
-
           </h3>
           <div class="wrap">
             <input type="radio" name="q3" value="a" id="q3a" />
@@ -184,10 +244,7 @@
               <span class="makesmall">Strongly Agree</span></label
             >
           </div>
-          <h3>
-            Q6. I can remove my ego and learn new things about myself. 
-
-          </h3>
+          <h3>Q6. I can remove my ego and learn new things about myself.</h3>
           <div class="wrap">
             <input type="radio" name="q6" value="a" id="q6a" />
             <label for="q6a"
@@ -217,6 +274,7 @@
       <!-- <footer>
         <p>Copyright &copy; 2014, All Rights Reserved</p>
       </footer>-->
+      
     </div>
     <script src="script.js"></script>
   </body>

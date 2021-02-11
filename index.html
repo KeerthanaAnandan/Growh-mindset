@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Discover Your Mindset.
-    </title>
+    <title>Discover Your Mindset.</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
@@ -21,14 +20,30 @@
     <link rel="stylesheet" href="style.css" />
     <style>
       .imgbucket {
-        background-image: url("assets/nothing.png");
+        background-image: url("assets/allbg1.png");
         background-repeat: no-repeat;
         background-position: center center;
 
         background-size: cover;
         opacity: 1;
         width: 100vw;
-        height: 100vh;
+        height: auto;
+      }
+      #navbar #logo {
+        float: left !important;
+
+        top: 0 !important;
+        left: 0 !important;
+        opacity: 1 !important;
+
+        position: absolute;
+        margin-left: 20px;
+        margin-top: 30px;
+      }
+      @media (max-width: 540px) {
+        .imgbucket {
+          background: none;
+        }
       }
     </style>
   </head>
@@ -41,20 +56,19 @@
     </nav>-->
 
     <main>
-      <!--- <nav id="navbar">
-        
-          <div class="logo"><a href="index.html"><img src="assets/logo.png"/></a></div>
-          
-      
-      
-      </nav>-->
+      <nav id="navbar">
+        <div class="logo">
+          <a href="index.html" id="logo"
+            ><img src="assets/logo.png" width="35%"
+          /></a>
+        </div>
+      </nav>
       <div id="showcase" class="imgbucket">
         <div class="container">
           <div class="showcase-content">
             <!-- <img src="assets/polardentlogo.png" width="35%" id="imgcol" />-->
 
-            <h1 class="lead">Discover Your Mindset.
-            </h1>
+            <h1 class="lead">Discover Your Mindset.</h1>
 
             <!--<div>
               <input
@@ -65,10 +79,12 @@
                 onchange="inputhandler(event)"
               />
             </div>-->
+            <p class="centerit">How do you measure up?</p>
             <p class="centerit">
-              How do you measure up?</p> 
-              <p class="centerit"> 
-                Please read through each question and choose your response (remember, don’t overthink it!). The purpose of this assessment is to determine where you currently fall on the Fixed vs Growth Mindset spectrum.
+              Please read through each question and choose your response
+              (remember, don’t overthink it!). The purpose of this assessment is
+              to determine where you currently fall on the Fixed vs Growth
+              Mindset spectrum.
             </p>
 
             <a class="btn" href="firstquiz.html"> Take the Quiz</a>
