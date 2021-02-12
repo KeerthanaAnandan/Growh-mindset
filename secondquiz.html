@@ -7,6 +7,17 @@
     <title> Health & Wellness</title>
     <link rel="stylesheet" href="style.css" />
     <style>
+            #navbar .logo {
+  float: left;
+
+  top: 0 ;
+  left: 0 ;
+  opacity: 1 ;
+
+  margin-left: -120px;
+  margin-right: -60px !important;
+
+}
      #container {
         background-image: url("assets/yellow1.png");
         background-repeat: no-repeat;
@@ -33,14 +44,53 @@
         background-color: #fe9800;
         color: azure;
       }
+      #container {
+  width: 100vw;
+  color: #000;
+text-align: center;
+overflow-wrap: normal;
+  padding: 35px;
+  font-family: "Helvetica";
+}
+
+#container > #header {
+  width: 90%;
+  margin-top: 180px;
+}
+
+#container h3 {
+  color: #000;
+
+  padding: 10px;
+  width: 100%;
+  margin: 10px;
+  font-size: 20px;
+  text-align: start;
+}
       @media (max-width: 540px) {
         #container {
          background-image: none !important;
     
     
         }
-      
-     
+        input[type="radio"]:checked + label:before {
+    height: 7px;
+    width: 7px;
+    border: 7px solid rgb(0, 0, 0);
+    background-color: #fe9800;
+  }
+  #navbar .logo {
+  float: left;
+
+  top: 0 ;
+  left: 0 ;
+  opacity: 1 ;
+
+  margin-left: -60px;
+  margin-right: -60px !important;
+  width: 45%;
+
+}
       }
     
     </style>
@@ -60,10 +110,11 @@
 
         </p>
         <br />
-        <!--<p>
+        <p>
           Please select the closest level of agreement to each statement. 
-        </p>-->
+        </p>
       </header>
+      <br><br>
       <section>
         <form
           name="quizForm"
@@ -120,7 +171,7 @@
           </div>
 
           <h3>
-            Q3. I ask questions to determine what is best for me vs. settling for what someone else tells me is best for me.
+            Q3. I ask questions to determine what is best for me instead of settling for what someone else tells me is best for me.
           </h3>
           <div class="wrap">
             <input type="radio" name="q3" value="a" id="q3a" />
@@ -136,7 +187,7 @@
           </div>
 
           <h3>
-            Q4. I am responsible for the choices I make and understand how they contribute to being a healthy person.
+            Q4. I am responsible for the choices I make and understand how they contribute to my health.
           </h3>
           <div class="wrap">
             <input type="radio" name="q4" value="a" id="q4a" />
@@ -181,7 +232,7 @@
             <label for="q6e"> <span class="makesmall">Strongly Agree</span></label>
           </div>
           <br /><br />
-          <div class="wrap">
+          <div class="btn-wrap">
             <button type="submit" class="btn-primary" id="btn-next">
               Next
             </button>

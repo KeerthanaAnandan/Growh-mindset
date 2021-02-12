@@ -15,19 +15,18 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
     />
     <style>
-      #container{
-        background-image: url("assets/allbg1.png");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        background-attachment: fixed;
-        opacity: 1;
-    
-      
-        width: 100vw;
-        height: auto;
-        margin: 0;
-      }
+      #navbar .logo {
+  float: left;
+
+  top: 0 ;
+  left: 0 ;
+  opacity: 1 ;
+
+  margin-left: -120px;
+  margin-right: -60px !important;
+
+}
+  
       input[type="radio"]:checked + label:before {
         height: 16px;
         width: 16px;
@@ -78,15 +77,72 @@
         font-size: 10px;
         margin:10px;
       }
-      @media (max-width: 540px) {
+      #container{
+        background-image: url("assets/allbg1.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        opacity: 1;
+    
+      
+        width: 100vw;
+        height: auto;
+        margin: 0;
+        text-align: center;
+      }
+      #container {
+  width: 100vw;
+  color: #000;
+align-items: center;
+overflow-wrap: normal;
+  padding: 35px;
+  font-family: "Helvetica";
+}
+
+#container > #header {
+  width: 90%;
+  margin-top: 180px;
+}
+
+#container h3 {
+  color: #000;
+
+  padding: 10px;
+  width: 100%;
+  margin: 10px;
+  font-size: 20px;
+  text-align: start;
+}
+    
+@media (max-width: 540px) {
         #container {
          background-image: none !important;
     
     
         }
-      
+        input[type="radio"]:checked + label:before {
+    height: 7px;
+    width: 7px;
+    border: 7px solid rgb(0, 0, 0);
+    background-color: #ffffff;
+  }
+  #navbar .logo {
+  float: left;
+
+  top: 0 ;
+  left: 0 ;
+  opacity: 1 ;
+
+  margin-left: -60px;
+  margin-right: -60px !important;
+  width: 45%;
+
+}
+      } 
+
      
-      }
+ 
     
 
 
@@ -128,13 +184,14 @@
         <br />
         <p>Please select the closest level of agreement to each statement.</p>
       </header>
+      <br><br>
       <section>
         <form
           name="quizForm"
           class="fullform"
           onsubmit="return submitFirstAnswers(event)"
         >
-          <h3>Q1. I invest time in myself to be alone with my thoughts?.</h3>
+          <h3>Q1. I invest time in myself to be along with my thoughts.</h3>
           <div class="wrap">
             <input type="radio" name="q1" value="a" id="q1a" />
             <label for="q1a"
@@ -159,7 +216,7 @@
           <br />
           <h3>
             Q2. I feel secure in my ability to be positive even around negative
-            people?
+            people.
           </h3>
           <div class="wrap">
             <input type="radio" name="q2" value="a" id="q2a" />
@@ -181,7 +238,7 @@
           </div>
 
           <h3>
-            Q3. I find confidence when I am faced with difficult conversations.
+            Q3. I feel confident when faced with difficult conversations.
           </h3>
           <div class="wrap">
             <input type="radio" name="q3" value="a" id="q3a" />
@@ -203,8 +260,7 @@
           </div>
 
           <h3>
-            Q4. I am confident to try new things even if I have no previous
-            experience.
+            Q4. I feel confident trying new things, even with no previous experience.
           </h3>
           <div class="wrap">
             <input type="radio" name="q4" value="a" id="q4a" />
@@ -264,7 +320,7 @@
             >
           </div>
           <br /><br />
-          <div class="wrap">
+          <div class="btn-wrap">
             <button type="submit" class="btn-primary" id="btn-next">
               Next
             </button>

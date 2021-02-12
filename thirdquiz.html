@@ -7,6 +7,17 @@
     <title>Finances & Wealth</title>
     <link rel="stylesheet" href="style.css" />
     <style>
+            #navbar .logo {
+  float: left;
+
+  top: 0 ;
+  left: 0 ;
+  opacity: 1 ;
+
+  margin-left: -120px;
+  margin-right: -60px !important;
+
+}
        #container {
         background-image: url("assets/green1.png");
         background-repeat: no-repeat;
@@ -33,12 +44,54 @@
         background-color: #217e6b;
         color: azure;
       }
+      #container {
+  width: 100vw;
+  color: #000;
+text-align: center;
+overflow-wrap: normal;
+  padding: 35px;
+  font-family: "Helvetica";
+}
+
+#container > #header {
+  width: 90%;
+  margin-top: 180px;
+}
+
+#container h3 {
+  color: #000;
+
+  padding: 10px;
+  width: 100%;
+  margin: 10px;
+  font-size: 20px;
+  text-align: start;
+}
       @media (max-width: 540px) {
         #container {
          background-image: none !important;
     
     
-        }}
+        }
+        input[type="radio"]:checked + label:before {
+    height: 7px;
+    width: 7px;
+    border: 7px solid rgb(0, 0, 0);
+    background-color: #217e6b;
+  }
+  #navbar .logo {
+  float: left;
+
+  top: 0 ;
+  left: 0 ;
+  opacity: 1 ;
+
+  margin-left: -60px;
+  margin-right: -60px !important;
+  width: 45%;
+
+}
+      }
     
     </style>
   </head>
@@ -52,21 +105,22 @@
       <header id="header">
         <h1>Finances & Wealth</h1>
         <p>
-          A Finance & Wealth Growth Mindset is more important than the amount of money you earn or even what you own.  It is about protecting your financial foundation and resisting instant gratification and consumer temptations as you work towards your goals. It’s recognizing that when we sacrifice our future for today’s wants, that we are in essence stealing from our future self.
-
+          A Finance & Wealth Growth Mindset is more important than the amount of money you earn or even what you own. It is about protecting your financial foundation and resisting instant gratification as you work towards your goals. It’s recognizing that we are stealing from our future self when we don’t.
 
         <br />
         <p>
           Please select the closest level of agreement to each statement. 
         </p>
+     
       </header>
+      <br><br>
       <section>
         <form
           name="quizForm"
           class="fullform"
           onsubmit="return submitThirdAnswers(event)"
         >
-          <h3>Q1. I invest, what I believe, is enough time into managing my finances and wealth planning for the future. </h3>
+          <h3>Q1. I invest enough time into managing and planning my finances. </h3>
           <div class="wrap">
             <input type="radio" name="q1" value="a" id="q1a" />
             <label for="q1a"
@@ -90,7 +144,7 @@
           </div>
           <br />
           <h3>
-            Q2. If today was the last day of my life, I believe I currently have enough resources to accomplish all of the things I would want to do.
+            Q2. If an emergency were to come up tomorrow and I could not work for 90 days, I would be ok.
 
           </h3>
           <div class="wrap">
@@ -107,8 +161,7 @@
           </div>
 
           <h3>
-            Q3. I have the financial freedom to change my day and not feel like I am living the same day over and over.
-
+            Q3. I have the confidence to live within my means.
 
           </h3>
           <div class="wrap">
@@ -140,7 +193,7 @@
             <label for="q4e"> <span class="makesmall">Strongly Agree</span></label>
           </div>
 
-          <h3>Q5. When I spend my money I always ask myself if I am making a good investment.
+          <h3>Q5. When I choose to spend money, I always ask myself, “is this a good investment?”
             </h3>
           <div class="wrap">
             <input type="radio" name="q5" value="a" id="q5a" />
@@ -155,8 +208,7 @@
             <label for="q5e"> <span class="makesmall">Strongly Agree</span></label>
           </div>
           <h3>
-            Q6. The financial decisions I make are based on free will and are not subject to multiple constraints.
-
+            Q6. I regularly put money aside in a “Fun Fund” so that I can spend as desired without affecting the rest of my finances.
 
           </h3>
           <div class="wrap">
@@ -172,7 +224,7 @@
             <label for="q6e"> <span class="makesmall">Strongly Agree</span></label>
           </div>
           <br /><br />
-          <div class="wrap">
+          <div class="btn-wrap">
             <button type="submit" class="btn-primary" id="btn-next">
               Next
             </button>
