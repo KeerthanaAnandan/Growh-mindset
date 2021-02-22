@@ -53,3 +53,15 @@ function ajax(method, url, data, success, error) {
   };
   xhr.send(data);
 }
+
+///////////////////////////usertype//////
+const firstpoints = sessionStorage.getItem("firstpoints");
+const secondpoints = sessionStorage.getItem("secondpoints");
+const thirdpoints = sessionStorage.getItem("thirdpoints");
+const fourthpoints = sessionStorage.getItem("fourthpoints");
+const fifthpoints = sessionStorage.getItem("fifthpoints");
+
+let typo = `GM:${firstpoints} , HW:${secondpoints} , FW:${thirdpoints} , CB:${fourthpoints} , PD:${fifthpoints}`;
+
+document.querySelector(".usertype").value = typo;
+console.log(typo);

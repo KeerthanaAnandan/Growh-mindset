@@ -458,9 +458,9 @@ li {
   padding: 1.2rem;
   margin-bottom: 0.5rem;
   border: 2px solid #000000;
-} /*.usertype {
+} .usertype {
 	display: none;
-  }*/
+  }
 
 .footer-container input[type="submit"] {
   width: 50%;
