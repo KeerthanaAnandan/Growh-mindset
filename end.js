@@ -11,7 +11,7 @@ document.querySelector(".fourthpo").innerHTML = fourthpoints;
 document.querySelector(".fifthpo").innerHTML = fifthpoints;
 
 ////////////////////////social share
-const facebookBtn = document.querySelector(".facebook-btn");
+/*const facebookBtn = document.querySelector(".facebook-btn");
 const twitterBtn = document.querySelector(".twitter-btn");
 
 const linkedinBtn = document.querySelector(".linkedin-btn");
@@ -49,4 +49,4 @@ function init() {
   );
 }
 
-init();
+init();*/
